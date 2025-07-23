@@ -1,6 +1,6 @@
 use std::fmt::Debug;
 
-use rand::distributions::{Distribution, WeightedIndex};
+use rand::distr::{weighted::WeightedIndex, Distribution};
 
 use crate::{configure::*, types::*};
 

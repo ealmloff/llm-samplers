@@ -32,11 +32,11 @@ pub enum SamplerError {
 
     #[error("rand error: {0}")]
     /// RNG-related errors
-    RandError(rand::Error),
+    RandError(rand::distr::uniform::Error),
 
     #[error("rand weights error: {0}")]
     /// RNG weights-related errors
-    RandWeightedError(rand::distributions::WeightedError),
+    RandWeightedError(rand::distr::weighted::Error),
 }
 
 #[derive(Debug, Clone, Error)]
